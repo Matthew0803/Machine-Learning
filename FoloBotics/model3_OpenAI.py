@@ -26,7 +26,7 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # Configuration
-TOKEN = "YOUR_OPENAI_API_KEY"  # Replace with your OpenAI API key
+TOKEN = "YOUR_HUGGINGFACE_API_KEY"  # Replace with your Hugging Face API key
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # --------------------------
@@ -107,7 +107,7 @@ except Exception as e:
 # --------------------------
 # OpenAI API Setup
 # --------------------------
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"
 client = OpenAI(
     api_key=OPENAI_API_KEY
 )  
